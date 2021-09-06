@@ -9,9 +9,17 @@ export default function useTipo() {
 	})
 
 	const loadTipos = async () => {
+		const url = 'http://www.gulacerta.com.br/wp-json/wp/v2/tipo?_fields=id,name&orderby=count&order=desc'
+		const config = {
+			url,
+			headers: {
+				'Access-Control-Allow-Origin' : '*',
+				'Access-Control-Allow-Methods':'GET',
+			}
+		}
+
 		try {
-			await axios
-			.get('http://www.gulacerta.com.br/wp-json/wp/v2/tipo?_fields=id,name&orderby=count&order=desc')
+			await axios(config)
 			.then(item => {
 				state.tipos = item.data
 			})
