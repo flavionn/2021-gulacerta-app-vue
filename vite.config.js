@@ -9,7 +9,6 @@ import Components from 'unplugin-vue-components/vite'
 import WindiCSS from 'vite-plugin-windicss'
 
 const config = defineConfig({
-	base: process.env.NOVE_ENV === 'production' ? '/2021-gulacerta-app-vue/' : '/',
 	plugins: [
 		Vue(),
 		Pages(),
