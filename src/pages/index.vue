@@ -26,19 +26,19 @@ div(class="space-y-24")
 	div(class="text-4xl font-bold tracking-tight w-4/5") Encontre um lugar legal para ir hoje em Brasília
 
 	div(class="space-y-4")
-		group-header O que você esta buscando?
+		group-header Tipo
 		row(:content="tipos")
 
 	div(class="space-y-4")
-		group-header Qual é o mood pra hoje?
+		group-header Característica
 		row(:content="caracteristicas")
 
 	div(class="space-y-4")
-		group-header Vai pra onde?
+		group-header Bairro
 		row(:content="bairros")
 
 	div(class="space-y-4")
-		group-header Se sentindo internacional?
+		group-header Nacionalidade
 		row(:content="nacionalidades")
 
 </template>
